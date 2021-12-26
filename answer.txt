@@ -1,0 +1,45 @@
+1- git is used to control and track the project files
+
+2- A good repository is a repository which is well documented and contains LICENSE and README.md at least.
+
+3- A good document is clear and comprehensive.
+
+4- "git clone" clones a repository into a new directory.
+e.g. git clone https://github.com/torvalds/linux
+
+5- "git pull" will update local repository.
+e.g. git pull
+
+6-1 "git checkout": switches branches.
+6-2 "git revert": will revert a commit and creates a new commit(revert commit). 
+6-3 "git reset": will changes the HEAD. (so we can cancel our commits and clean up our history.)
+
+7- "git rebase" and "git merge" use different ways to combine changes.
+
+(m)---c1------
+(b1)   \---c2
+
+"rebase" will move our branch to end of destination branch.
+
+(m)---c1------c2
+
+"merge" will merge (:D) commits of "feature" branch and destination branch.
+
+(no fast-forward)
+(m)---c1------c3
+(b1)   \---c2/
+
+(fast forward)
+(m)---c1------(no new commit)
+(b1)   \---c2/
+
+8- use "git log" to see history of commits.
+
+9- use "git diff" to see changes of files.
+
+10- "git tag x" is used for tagging (e.g. v1.1, v2, v3.6)
+"git tag v1.4"
+
+11- to contribute we must fork the repository and send pull request/ merge request after changing the source.
+
+12- We can split our upcoming features to branchs and work on them separately.
